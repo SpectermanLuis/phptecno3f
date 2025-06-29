@@ -52,6 +52,9 @@ codigo¡
 ![Pantalla editar_producto](imagenes/editar_producto.jpg)
 
 
+## Pantallas del FRONT 
+#### Pantalla catalogo
+![Pantalla catalogo.html](imagenes/catalogo.jpg)
 
 
 
