@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>Catálogo con JS</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<!-- Front que muestra los datos obtenidos de la base de datos , tabla productos
+   y los visualiza en forma de card 
+   El front no era obligatorio , por lo que se incluyo css y javascript en un unico 
+   archivo , solo a efectos de tener un front que verifique lo procesado en el crud
+-->
+
+<!-- estilos -->
+<style>
+  .card-img-top {
+    max-height: 200px;
+    object-fit: contain;
+  }
+</style>
+
+</head>
+<body class="bg-light">
+<div class="container py-4">
+  <h1>TECNO 3F - PHP Y MYSQL - TP FINAL - FRONT</h1>
+  <h2>Catálogo dinámico con JS</h2>
+  
+  <!-- Contenedor donde se van a insertar dinámicamente las tarjetas -->
+  <div id="catalogo" class="row g-4"></div>
+</div>
+
+
+<script>
+
+    /*  Codigo javascript que permite obtener los datos de los productos a procesar
+        por medio de api_productos.php
+    */
+
+    // Función asincrónica para cargar productos desde el backend
+    async function cargarProductos() {
+    try {
+      const resp = await fetch('api_productos.php');
+      if (!resp.ok) throw new Error('Error al cargar productos');
+      // Convierte la respuesta en JSON
+      const productos = await resp.json();
+
+      console.log(productos);
+
+      // obtener el elemento div donde se armara el catalogo con las cards 
+      // con los datos de los productos 
+      const contenedor = document.getElementById('catalogo');
+      contenedor.innerHTML = '';
+
+      // Recorre el arreglo de productos y genera el HTML de cada tarjeta por cada elemento del arreglo
+      productos.forEach(p => {
+
+        console.log(p.imagen);
+        console.log(p);
+        const imgSrc = p.imagen && p.imagen.trim() !== '' 
+        ? 'uploads/' + p.imagen 
+        : 'https://dummyimage.com/300x200/cccccc/000000&text=Sin+imagen';
+      
+      //  HTML para una tarjeta de producto
+        const card = `
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img src="${imgSrc}" class="card-img-top" alt="${p.nombre}" />
+              <div class="card-body">
+                <h5 class="card-title">${p.nombre}</h5>
+                <p class="card-text">
+                  <strong>Código:</strong> ${p.codigo}<br/>
+                  <strong>Categoría:</strong> ${p.categoria}<br/>
+                  <strong>Cantidad:</strong> ${parseFloat(p.cantidad).toFixed(2)}
+                </p>
+              </div>
+            </div>
+          </div>
+        `;
+        
+        // Agrega la tarjeta generada al contenedor
+        contenedor.innerHTML += card;
+      });
+    } catch(e) {
+      document.getElementById('catalogo').innerHTML = '<p class="text-danger">No se pudieron cargar los productos.</p>';
+      console.error(e);
+    }
+  }
+  // Llamada a la funcion 
+  cargarProductos();
+</script>
+
+</body>
+</html>
