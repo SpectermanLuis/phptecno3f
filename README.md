@@ -32,7 +32,26 @@ codigo¡
   - #### Usuario de prueba        = admin
   - #### Clave Usuario de prueba  = admin123
 
-
+## Pantallas del CRUD
 #### Pantalla login
 ![Pantalla de login](imagenes/login.jpg)
+
+#### Pantalla dashboard
+![Pantalla Dashboard](imagenes/dashboard.jpg)
+
+#### Pantalla grilla de productos
+![Pantalla ver_productos](imagenes/ver_productos.jpg)
+
+#### Pantalla crear producto
+![Pantalla crear_producto](imagenes/crear_producto.jpg)
+
+#### Pantalla borrar producto
+![Pantalla borrar_producto](imagenes/elimninar_producto.jpg)
+
+#### Pantalla edicion para modificacion
+![Pantalla editar_producto](imagenes/editar_producto.jpg)
+
+
+
+
 
