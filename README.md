@@ -32,6 +32,16 @@ codigo¡
   - #### Usuario de prueba        = admin
   - #### Clave Usuario de prueba  = admin123
 
+### INICIAR CRUD desde servidor donde esta alojado
+http://los1062.rf.gd/login.php
+
+### INICIAR FRONT desde servidor donde esta alojado
+http://los1062.rf.gd/catalogo.html
+
+
+
+
+
 ## Pantallas del CRUD
 #### Pantalla login
 ![Pantalla de login](imagenes/login.jpg)
