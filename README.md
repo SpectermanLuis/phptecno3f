@@ -54,7 +54,7 @@ codigo¡
 
 ## Pantallas del FRONT 
 #### Pantalla catalogo
-![Pantalla catalogo.html](imagenes/front.jpg)
+![Pantalla FRONT](imagenes/FRONT.jpg)
 
 
 
