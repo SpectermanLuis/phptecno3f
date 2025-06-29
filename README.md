@@ -31,4 +31,8 @@ codigo¡
 ### ATENCION Datos de prueba para validar el login al crud
   - #### Usuario de prueba        = admin
   - #### Clave Usuario de prueba  = admin123
-  - 
+
+
+#### Pantalla login
+![Pantalla de login](imagenes/captura1.png)
+
