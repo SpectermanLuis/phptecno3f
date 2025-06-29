@@ -23,18 +23,12 @@ codigo¡
     ├   Archivos front basico para verificar funcionamiento del crud
     ├── catalogo.html
     ├── api_productos.php
+    ├── tp_final.sql   - script para crear la base de datos y cargar dato usuario prueba
     └── README.md
 ```
 
 ---
-### CONFIGURACION DE ENTORNO
-  - #### VARIABLES DE ENTORNO
-    Se debe hacer una copia del archivo **.env.dist** y renombrarlo como **.env**. Con respecto a su contenido, es necesario asignar los valores a correspondientes a las variables:
-    ``` js
-        SERVER_PORT=3005
-        SERVER_HOST=127.0.0.1
-
-        DATABASE_URL=tu-cadena-de-conexion
-        DATABASE_NAME=muebleria
-    ```
-
+### ATENCION Datos de prueba para validar el login al crud
+  - #### Usuario de prueba        = admin
+  - #### Clave Usuario de prueba  = admin123
+  - 
