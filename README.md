@@ -34,5 +34,5 @@ codigo¡
 
 
 #### Pantalla login
-![Pantalla de login](imagenes/captura1.png)
+![Pantalla de login](imagenes/login.jpg)
 
