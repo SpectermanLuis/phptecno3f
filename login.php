@@ -50,6 +50,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <div class="mb-3"><input type="password" class="form-control" name="clave" placeholder="Clave" required></div>
   <button class="btn btn-primary">Ingresar</button>
 </form>
+
+<h5>Usuario para prueba =  admin</h5>
+<h5>Clave  para prueba =  admin123</h5>
+
 <!-- Mostrar error si existe -->
 <?php if(isset($error)) echo "<p class='text-danger mt-3'>$error</p>"; ?>
 </body>
