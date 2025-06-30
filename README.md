@@ -38,10 +38,43 @@ http://los1062.rf.gd/login.php
 ### INICIAR FRONT desde servidor donde esta alojado
 http://los1062.rf.gd/catalogo.html
 
+## 📦 Estructura de la base de datos
+
+La estructura de la base de datos necesaria para este proyecto se encuentra en el siguiente archivo:
+
+📁 [`tp_final.sql`](tp_final.sql)
+
+Este archivo incluye las sentencias `CREATE DATABASE` y`CREATE TABLE`  demás instrucciones necesarias para generar la base de datos desde cero.
+
+## 🧱 Ejemplo de estructura
+
+```sql
+DROP DATABASE IF EXISTS phpcrud3f;
+
+CREATE DATABASE  phpcrud3f ;
+
+USE phpcrud3f;
+
+CREATE TABLE usuarios (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  usuario VARCHAR(50) UNIQUE,
+  clave VARCHAR(255)
+);
+
+INSERT INTO usuarios (id, usuario, clave) VALUES
+(2, 'admin', '$2y$10$JZ563bJy2jApeI98yskAFe6k16ew5BU4RwopJsJfPLn08XPKSxIru');
 
 
-
-
+CREATE TABLE productos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  codigo VARCHAR(50) UNIQUE,
+  nombre VARCHAR(100),
+  categoria VARCHAR(50),
+  unidad_medida VARCHAR(20),
+  cantidad INT,
+  imagen VARCHAR(255)
+);
+```
 ## Pantallas del CRUD
 #### Pantalla login
 ![Pantalla de login](imagenes/login.jpg)
