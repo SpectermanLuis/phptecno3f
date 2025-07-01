@@ -8,6 +8,17 @@ Deberan crear un CRUD con LOGIN.
 Deben realizar buenas practicas, indentando y comentando el
 codigo¡
 
+### 🔧 Tecnologías Usadas
+
+- 🐘 PHP 
+- 🐬 MySQL
+- 🧰 Bootstrap 5
+- 💾 XAMPP 
+- 💻 Git & GitHub
+
+---
+
+
 #### Estructura de directorios
 ``` tree
     ├── uploads     ( carpeta donde se almacenan las imagenes de los productos que se cargan )
