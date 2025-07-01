@@ -32,10 +32,13 @@ codigo¡
   - #### Usuario de prueba        = admin
   - #### Clave Usuario de prueba  = admin123
 
-### INICIAR CRUD desde servidor donde esta alojado   ( https://infinityfree.net/ )
+### SERVIDOR USADO PARA ALOJAR EL TP
+https://infinityfree.net/ 
+
+### INICIAR CRUD desde servidor donde esta alojado   
 http://los1062.rf.gd/login.php
 
-### INICIAR FRONT desde servidor donde esta alojado   ( https://infinityfree.net/ )
+### INICIAR FRONT desde servidor donde esta alojado  
 http://los1062.rf.gd/catalogo.html
 
 ## 📦 Estructura de la base de datos
@@ -76,27 +79,27 @@ CREATE TABLE productos (
 );
 ```
 ## Pantallas del CRUD
-#### Pantalla login
+### Pantalla login
 ![Pantalla de login](imagenes/login.jpg)
 
-#### Pantalla dashboard
+### Pantalla dashboard
 ![Pantalla Dashboard](imagenes/dashboard.jpg)
 
-#### Pantalla grilla de productos
+### Pantalla grilla de productos
 ![Pantalla ver_productos](imagenes/ver_productos.jpg)
 
-#### Pantalla crear producto
+### Pantalla crear producto
 ![Pantalla crear_producto](imagenes/crear_producto.jpg)
 
-#### Pantalla borrar producto
+### Pantalla borrar producto
 ![Pantalla borrar_producto](imagenes/elimninar_producto.jpg)
 
-#### Pantalla edicion para modificacion
+### Pantalla edicion para modificacion
 ![Pantalla editar_producto](imagenes/editar_producto.jpg)
 
 
 ## Pantallas del FRONT 
-#### Pantalla catalogo
+### Pantalla catalogo
 ![Pantalla FRONT](imagenes/FRONT.jpg)
 
 
