@@ -32,10 +32,10 @@ codigo¡
   - #### Usuario de prueba        = admin
   - #### Clave Usuario de prueba  = admin123
 
-### INICIAR CRUD desde servidor donde esta alojado
+### INICIAR CRUD desde servidor donde esta alojado   ( https://infinityfree.net/ )
 http://los1062.rf.gd/login.php
 
-### INICIAR FRONT desde servidor donde esta alojado
+### INICIAR FRONT desde servidor donde esta alojado   ( https://infinityfree.net/ )
 http://los1062.rf.gd/catalogo.html
 
 ## 📦 Estructura de la base de datos
