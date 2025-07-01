@@ -10,7 +10,7 @@ codigo¡
 
 #### Estructura de directorios
 ``` tree
-    ├── uploads     ( imagenes de los productos que se cargan )
+    ├── uploads     ( carpeta donde se almacenan las imagenes de los productos que se cargan )
     │   Archivos para el crud   
     ├── conexion.php               conexion a la base de datos
     ├── crear_producto.php         creacion de producto , solicita datos e imagen opcional
